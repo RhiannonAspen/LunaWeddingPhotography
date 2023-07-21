@@ -1,0 +1,117 @@
+:root {
+	--pink: #FFA69C;
+	--lighterpink: #FFE4E1;
+	--accentyellow: #FCFFE0;
+}
+
+* {
+	margin: 0;
+	top: 0;
+	font-family: 'Source Serif 4', serif;
+}
+
+body {
+	background: var(--lighterpink);
+}
+
+
+
+/* Wedding Curtains on sides of the screen */
+.curtain-left {
+	height: 100vh;
+	position: fixed;
+	left: 0;
+}
+
+.curtain-shadow-left {
+	height: 110vh;
+	z-index: -1;
+	transform: translateX(10px);
+}
+
+.curtain-right {
+	height: 100vh;
+	position: fixed;
+	right: 0;
+}
+
+.curtain-shadow-right {
+	height: 110vh;
+	z-index: -1;
+	transform: translateX(-10px);
+}
+
+
+
+/* Introduction Text Formatting*/
+header {
+	text-align: center;
+	margin-top: 3%;
+	position: sticky;
+	scroll
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 3em;
+}
+
+.is-sticky {
+	margin-left: 1em;
+	text-align: left;
+	position: fixed;
+	z-index: 1;
+}
+
+/*Social Bar*/
+
+#social-bar {
+	position: fixed;
+	right: 5%;
+	top: 5%;
+	text-align: right;
+	display: flex;
+	flex-flow: column nowrap;
+	z-index: 1;
+	gap: 10px;
+}
+
+a {
+	text-decoration: none;
+	color: var(--pink);
+	padding: 5px;
+	background-color: var(--lighterpink);
+	border: 1px var(--pink) solid;
+	border-radius: 25px;
+	font-size: 2em;
+}
+
+
+/* Gallery */
+#gallery {
+	margin: 5% auto;
+	width: 60%;
+	display: flex;
+	flex-flow: row wrap;
+	place-content: center center;
+}
+
+#gallery>img {
+	height: 20%;
+	max-height: 500px;
+	max-width: 700px;
+}
+
+.img-lg {
+	height: 70%;
+	max-height: 900px;
+	width: 40%;
+	max-width: 700px;
+}
+
+#gallery>p {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 5%;
+	letter-spacing: 0.25em;
+}
